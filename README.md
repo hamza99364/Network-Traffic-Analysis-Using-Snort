@@ -32,7 +32,7 @@ nmap -sS 192.168.**.**
 Copy code
 
 Performed SYN scan to identify open ports on the target machine.
-
+IMG-20260224-WA0029(1).jpg
 ---
 
 ## 📡 Step 2: Packet Capture using tcpdump
