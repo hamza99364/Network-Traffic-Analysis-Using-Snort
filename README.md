@@ -32,7 +32,10 @@ nmap -sS 192.168.**.**
 Copy code
 
 Performed SYN scan to identify open ports on the target machine.
+
+
 ![Image 1](IMG-20260224-WA0029(1).jpg)
+
 ---
 
 ## 📡 Step 2: Packet Capture using tcpdump
@@ -47,6 +50,9 @@ sudo tcpdump -i eth0 'tcp[tcpflags] & tcp-syn != 0'
 
 Observed TCP SYN packets being sent to multiple ports.
 
+
+![Image 2](IMG-20260224-WA0009.jpg)
+
 ---
 
 ## 🔎 Step 3: Packet Analysis using Wireshark
@@ -56,6 +62,9 @@ tcp.flags.syn == 1 && tcp.flags.ack == 0
 
 
 Analyzed TCP handshake behavior and reconnaissance pattern.
+
+
+![Image 3](IMG-20260224-WA0030(1).jpg)
 
 ---
 
@@ -71,6 +80,11 @@ alert tcp any any -> 192.168.**.** any (flags:S; msg:"SYN Scan Detected"; sid:10
 
 Result:
 Snort successfully detected the SYN port scan attack and generated alerts.
+
+
+![Image 4](IMG-20260224-WA0019(1).jpg)
+
+![Image 5](IMG-20260224-WA0017(1).jpg)
 
 ---
 
