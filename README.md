@@ -66,7 +66,7 @@ sudo snort -c /etc/snort/snort.lua -i eth0 -A alert_fast
 
 
 Custom rule added:
-alert tcp any any -> 192.168.29.68 any (flags:S; msg:"SYN Scan Detected"; sid:1000001; rev:1;)
+alert tcp any any -> 192.168.**.** any (flags:S; msg:"SYN Scan Detected"; sid:1000001; rev:1;)
 
 
 Result:
