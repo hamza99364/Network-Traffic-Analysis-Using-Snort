@@ -18,8 +18,8 @@ The objective was to simulate a reconnaissance attack and analyze the generated 
 ---
 
 ## 🌐 Network Setup
-- Attacker Machine (Kali Linux): 192.168.**.***
-- Target Machine (Metasploitable 2): 192.168.**.***
+- Attacker Machine (Kali Linux): 192.168.29.**
+- Target Machine (Metasploitable 2): 192.168.29.68
 - Interface Used: eth0
 - Environment: VirtualBox Internal Network
 
@@ -28,8 +28,8 @@ The objective was to simulate a reconnaissance attack and analyze the generated 
 ## 🚀 Step 1: Port Scanning using Nmap
 
 Command:
-nmap -sS 192.168.**.**
-Copy code
+nmap -sS 192.168.29.68
+
 
 Performed SYN scan to identify open ports on the target machine.
 
